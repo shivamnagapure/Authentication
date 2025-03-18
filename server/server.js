@@ -10,7 +10,7 @@ const app = express();
 const port = process.env.PORT || 4000 ;
 connectDB();
 
-const allowedOrigins = ['http://localhost:5173'] //to run this code on other server
+const allowedOrigins = ['http://localhost:5173' , 'https://authentication-client-8k72.onrender.com' , 'http://localhost:3000'] //to run this code on other server
 
 app.use(express.json());
 app.use(cookieParser());
