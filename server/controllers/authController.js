@@ -87,7 +87,7 @@ export const login = async (req , res) => {
         console.log("Set-Cookie Attempt:", res.getHeaders()["set-cookie"]);
 
         //return res.json({success : true});
-        res.status(200).json({ success: true, token });
+        res.status(200).json({ success: true, token});
 
     } catch (error) {
         res.json({success : false , message : error.message});
