@@ -84,6 +84,8 @@ export const login = async (req , res) => {
             maxAge : 7 * 24 * 60 * 60 * 1000 
         });
 
+        console.log("Set-Cookie Attempt:", res.getHeaders()["set-cookie"]);
+
         return res.json({success : true});
 
     } catch (error) {
