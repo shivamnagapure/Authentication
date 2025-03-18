@@ -8,7 +8,7 @@ export const AppContextProvider = ({children}) => {
 
     axios.defaults.withCredentials = true
 
-    const backendUrl = "https://authentication-dzpr.onrender.com";
+    const backendUrl = import.meta.env.VITE_BACKEND_URL ;
     const  [isLoggedIn , setIsLoggedIn] = useState(false);
     const [userData , setUserData]  = useState(false);
 
